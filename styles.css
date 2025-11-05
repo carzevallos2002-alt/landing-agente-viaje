@@ -1,0 +1,11 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#222}
+.hero{background:#0b5cff;color:#fff;padding:40px;text-align:center}
+.hero h1{margin:0 0 8px}
+.hero p{margin:0 0 16px}
+.cta{background:#fff;color:#0b5cff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600}
+.container{max-width:900px;margin:24px auto;padding:0 16px}
+section{margin-bottom:18px}
+input[type=email]{padding:8px 10px;border:1px solid #ddd;border-radius:4px;margin-right:8px}
+button{padding:8px 12px;border-radius:4px;border:none;background:#0b5cff;color:#fff}
+footer{padding:12px;text-align:center;color:#666;background:#f7f7f7}
+.muted{color:#2a6bfd}

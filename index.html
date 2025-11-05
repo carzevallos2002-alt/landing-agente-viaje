@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agente de Viaje — Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Agente de Viaje — Demo</h1>
+      <p>Busca, arma itinerarios y reserva a través de enlaces de afiliado. Demo local y sin costes.</p>
+      <a class="cta" href="../streamlit_app.py">Abrir demo local (usa streamlit)</a>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Probar ahora</h2>
+        <p>Para abrir la demo local sigue las instrucciones del README y ejecuta la app Streamlit.</p>
+      </section>
+
+      <section>
+        <h2>Captura de emails (demo)</h2>
+        <p>Introduce tu email para recibir novedades. Este formulario descarga el email en tu navegador (sin servidor).</p>
+        <form id="leadForm">
+          <input id="email" type="email" placeholder="tu@correo.com" required />
+          <button type="submit">Guardar localmente</button>
+        </form>
+        <p id="saved" class="muted"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Demo local — sin costes. Puedes desplegar esto en GitHub Pages o Netlify.</p>
+    </footer>
+
+    <script>
+      const form = document.getElementById('leadForm');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        // store in localStorage
+        const list = JSON.parse(localStorage.getItem('leads') || '[]');
+        list.push({email: email, ts: new Date().toISOString()});
+        localStorage.setItem('leads', JSON.stringify(list));
+        // create downloadable file
+        const blob = new Blob([email + '\n'], {type: 'text/plain'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'lead_' + (new Date()).toISOString().slice(0,19).replace(/[:T]/g,'-') + '.txt';
+        a.click();
+        document.getElementById('saved').textContent = 'Email guardado localmente. También se descargó un archivo con el email.';
+      });
+    </script>
+  </body>
+</html>
