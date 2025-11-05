@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agente de Viaje — Pricing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .pricing {display:flex;gap:20px;flex-wrap:wrap;margin-top:18px}
+      .card{flex:1;min-width:220px;background:#fff;border-radius:8px;padding:18px;border:1px solid #e6eef6}
+      .price{font-size:28px;color:#0b3559}
+      .cta{display:inline-block;margin-top:12px;padding:10px 14px;background:#0b3559;color:#fff;border-radius:6px;text-decoration:none}
+      .muted{color:#666;font-size:14px}
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Planes y precios — Agente de Viaje</h1>
+      <p>Solución rápida para generar itinerarios y lanzar pilotos con tus clientes. Pilotos diseñados para agencias de viajes y tour operators.</p>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Oferta de lanzamiento</h2>
+        <p class="muted">Piloto de 4 semanas — ideal para validar impacto en una agencia pequeña o cadena boutique.</p>
+        <div class="pricing">
+          <div class="card">
+            <h3>Piloto — Pago único</h3>
+            <div class="price">$199</div>
+            <p>4 semanas, onboarding, setup, y soporte por email. Métricas de éxito definidas con la agencia.</p>
+            <a class="cta" href="mailto:contact@agenteviaje.test?subject=Solicitud%20piloto%20$199">Solicitar piloto</a>
+          </div>
+
+          <div class="card">
+            <h3>Starter — Suscripción</h3>
+            <div class="price">$9.99 / mes</div>
+            <p>Para usuarios individuales o agencias pequeñas: búsquedas ilimitadas básicas, export JSON.</p>
+            <a class="cta" href="mailto:contact@agenteviaje.test?subject=Interesado%20Starter">Solicitar demo</a>
+          </div>
+
+          <div class="card">
+            <h3>Pro — Suscripción</h3>
+            <div class="price">$29.99 / mes</div>
+            <p>Incluye integraciones CSV/API, prioridad en soporte y export a PDF/Excel.</p>
+            <a class="cta" href="mailto:contact@agenteviaje.test?subject=Interesado%20Pro">Solicitar demo</a>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:24px">
+        <h2>Materiales para compartir</h2>
+        <p>Descarga estas imágenes para adjuntar a tus emails de outreach o a documentos comerciales.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+          <div style="flex:1;min-width:260px">
+            <img src="assets/demo1_email.png" alt="Demo1" style="width:100%;border:1px solid #eee;border-radius:6px"/>
+            <p class="muted">GIF / imagen para email — búsqueda</p>
+            <p><a href="assets/demo1_email.png" download>Descargar</a></p>
+          </div>
+          <div style="flex:1;min-width:260px">
+            <img src="assets/demo2_email.png" alt="Demo2" style="width:100%;border:1px solid #eee;border-radius:6px"/>
+            <p class="muted">GIF / imagen para email — itinerario</p>
+            <p><a href="assets/demo2_email.png" download>Descargar</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:24px">
+        <h2>Preguntas frecuentes rápidas</h2>
+        <ul>
+          <li><strong>¿Cómo pago?</strong> Por ahora aceptamos pagos por transferencia o Stripe (modo test). Contacta para facturación.</li>
+          <li><strong>¿Datos y privacidad?</strong> Consulta nuestra <a href="privacy.md">política de privacidad</a>.</li>
+          <li><strong>¿Contratos?</strong> Descarga un borrador de contrato piloto en <a href="contract_pilot.md">contract_pilot.md</a>.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer style="margin-top:40px">
+      <p class="muted">¿Listo para empezar? <a href="mailto:contact@agenteviaje.test">Contacta</a> y te ayudamos a montar el piloto.</p>
+    </footer>
+  </body>
+</html>

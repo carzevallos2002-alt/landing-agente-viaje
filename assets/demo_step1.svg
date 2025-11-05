@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect width="100%" height="100%" fill="#f6f9fc"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="60" font-size="26" fill="#0b3559">Agente de Viaje — Demo</text>
+    <rect x="40" y="80" width="720" height="120" rx="8" fill="#ffffff" stroke="#e0e7ef"/>
+    <text x="60" y="110" font-size="16" fill="#0b3559">1) Buscar vuelos: origen MAD → destino BCN</text>
+    <text x="60" y="135" font-size="14" fill="#333">Fechas: 2025-12-01 — Resultados con precio y duración</text>
+    <g transform="translate(60,170)">
+      <rect width="640" height="40" rx="6" fill="#f1f5f9"/>
+      <text x="12" y="26" font-size="13" fill="#0b3559">Resultados: FL-001 — Airline A — $120</text>
+    </g>
+    <text x="60" y="320" font-size="13" fill="#666">Usa esto en tus emails como imagen para mostrar el flujo inicial de búsqueda.</text>
+  </g>
+</svg>
